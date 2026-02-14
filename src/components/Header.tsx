@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { SITE } from "@/lib/constants";
 import { Container } from "./Container";
@@ -5,14 +6,24 @@ import { ButtonLink } from "./ui";
 
 function Logo() {
   return (
-    <div className="flex items-center gap-2">
-      <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl border border-border bg-white shadow-sm">
-        <span className="h-3 w-3 rounded-full bg-accent" aria-hidden />
+    <div className="flex items-center gap-3">
+      <div className="relative h-8 w-8 overflow-hidden rounded-xl border border-border bg-white shadow-sm">
+        <Image
+          src="/brand/sables.png"   // change to /brand/Sables.png if yours is PNG
+          alt="Sable Gas & Energy"
+          fill
+          className="object-contain p-1"
+          priority
+        />
+      </div>
+
+      <span className="text-sm font-semibold tracking-[-0.02em]">
+        {SITE.brandName}
       </span>
-      <span className="text-sm font-semibold tracking-[-0.02em]">{SITE.brandName}</span>
     </div>
   );
 }
+
 
 export function Header() {
   return (
