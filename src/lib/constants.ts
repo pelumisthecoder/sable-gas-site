@@ -9,7 +9,7 @@ export const SITE = {
   description:
     "Premium LPG delivery & refills, handled with care. Order in seconds via WhatsApp, phone, or quick form. Serving Magboro, Maryland (Lagos) & Ikeja within 15km.",
   // IMPORTANT: Change this after you buy a domain or once Vercel gives you a production URL.
-  url: "https://sable-gas-energy.vercel.app",
+  url: "https://sable-gas-site.vercel.app",
   whatsappE164: "+2348022238650",
   whatsappWaMe: "https://wa.me/2348022238650",
   phoneDisplay: "+234 802 223 8650",
